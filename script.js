@@ -1,6 +1,6 @@
 const sliders = document.querySelector(".filme__container");
 let scrollAmount = 0;
-let scrollPerClick = 100;
+let scrollPerClick = 220;
 const imagePadding = 20;
 
 
@@ -45,7 +45,7 @@ async function showMovies() {
 
         const firstImage = document.querySelector("img-0");
         if (firstImage) {
-            scrollPerClick = firstImage + imagePadding;
+            scrollPerClick = firstImage + imagePadding + 20;
         }
     }catch (error) {
         console.log("Erro ao buscar filmes" , error);
