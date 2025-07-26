@@ -1,0 +1,14 @@
+.sub__titulo.assinatura {
+  margin: 0.5rem;
+  padding: 1rem;
+  font-family: var(--fonte-titulo);
+  text-align: center;
+}
+
+.texto__assinatura {
+  color: #ffffff;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-family: var(--fonte-texto);
+  text-align: center;
+}

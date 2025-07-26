@@ -1,0 +1,61 @@
+.slider-img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.slider-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.sliderButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 3rem;
+  font-size: 24px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px);         
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;        
+}
+
+.sliderButton:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.3); 
+}
+
+.sliderButtonSerie {
+  position: absolute;
+  top: 115%;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 3rem;
+  font-size: 24px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px);         
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;   
+}
+
+.sliderButtonSerie:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.3); 
+}

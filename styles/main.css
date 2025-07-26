@@ -8,7 +8,6 @@
     --fonte-titulo: 'Poppins', sans-serif;
 }
 
-
 body {
   background-color: black;
 }
@@ -45,6 +44,10 @@ body {
   font-family: var(--fonte-titulo);
 }
 
+.sub__titulo.serie {
+  margin-top: 2rem;
+}
+
 .carrossel {
   position: relative;
   display: flex;
@@ -58,45 +61,25 @@ body {
   scroll-behavior: smooth;
   gap: 10px;
   padding: 10px 0;
+  cursor: pointer;
 }
 
 .filme__container::-webkit-scrollbar {
   display: none; 
 }
 
-.slider-img {
-  width: 200px;
-  height: auto;
-  border-radius: 10px;
-  flex-shrink: 0;
-}
-
-.sliderButton {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 2.5rem;
-  height: 3rem;
-  font-size: 24px;
-  font-weight: bold;
-  background: rgba(255, 255, 255, 0.1); 
-  backdrop-filter: blur(10px);         
-  color: white;
+.serie__container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 10px;
+  padding: 10px 0;
   cursor: pointer;
-  z-index: 2;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;           
 }
 
-.sliderButton:hover {
-  opacity: 1;
-  background: rgba(255, 255, 255, 0.3); 
+.serie__container::-webkit-scrollbar {
+  display: none; 
 }
-
-
 
 .button__esquerda {
   left: 0;
@@ -107,12 +90,4 @@ body {
 .button__direita {
   right: 0;
   height: 5rem;
-}
-
-.serie__container {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  gap: 10px;
-  padding: 10px 0;
 }

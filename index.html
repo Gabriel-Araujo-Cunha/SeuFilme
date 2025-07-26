@@ -8,6 +8,8 @@
         href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sliders.css">
+    <link rel="stylesheet" href="styles/assinatura.css">
     <title>SeuFilme</title>
 </head>
 
@@ -27,13 +29,13 @@
                     <a href="index.html" class="nav__link">Início</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">Filmes</a>
+                    <a href="#filme" class="nav__link">Filmes</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">Séries</a>
+                    <a href="#serie" class="nav__link">Séries</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link">Assinatura</a>
+                    <a href target="#assinatura" class="nav__link">Assinatura</a>
                 </li>
 
                 <li class="nav__item nav__icons">
@@ -46,7 +48,7 @@
     </header>
 
     <section class="filme">
-        <h2 class="sub__titulo">Filmes</h2>
+        <h2 id="filme" class="sub__titulo">Filmes</h2>
 
         <div class="carrossel">
 
@@ -66,7 +68,7 @@
 
         </div>
 
-        <h2 class="sub__titulo">Séries</h2>
+        <h2  id="serie" class="sub__titulo serie">Séries</h2>
 
                     <div class="serie__container" id="slider"></div>
 
@@ -83,7 +85,12 @@
             </a>
 
         </div>
+    </section>
 
+    <section id="Assinatura" class="assinatura">
+        <h2 class="sub__titulo assinatura">Assine agora</h2>
+        <p class="texto__assinatura">Assine nosso plano e tenha acesso aos melhores filmes e séries</p>
+        <div class="assinatura"></div>
 
     </section>
 
