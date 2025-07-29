@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - SeuFilme</title>
+    <link rel="stylesheet" href="styles/login.css" />
+</head>
+
+<body>
+    <main class="login__container">
+        <section class="login__box">
+            <img src="./img/logo.png" alt="logo do SeuFilme">
+            <h2 class="titulo__login">Bem-vindo ao <span class="titulo__destaque">SeuFilme</span></h2>
+            <p class="texto__descricao">Faça login para acessar sua conta</p>
+            <form class="login__form">
+                <label class="texto__label" for="email">Informe seu e-mail</label>
+                <input type="email" id="email" placeholder="Email" required />
+
+                <label class="texto__label" for="senha">Informe sua senha</label>
+                <input type="password" id="senha" placeholder="Senha" required />
+                <button class="login" type="submit" onclick="entrar()">Entrar</button>
+                <p class="texto__label">
+                    Não tem conta? <a class="register__link" href="cadastro.html">Cadastre-se</a>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>

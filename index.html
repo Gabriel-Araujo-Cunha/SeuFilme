@@ -8,8 +8,8 @@
         href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/login.css">
     <link rel="stylesheet" href="styles/sliders.css">
-    <link rel="stylesheet" href="styles/assinatura.css">
     <title>SeuFilme</title>
 </head>
 
@@ -35,13 +35,7 @@
                     <a href="#serie" class="nav__link">Séries</a>
                 </li>
                 <li class="nav__item">
-                    <a href target="#assinatura" class="nav__link">Assinatura</a>
-                </li>
-
-                <li class="nav__item nav__icons">
-                    <a href="#" aria-label="perfil">
-                        <img src="./img/Perfil.png" alt="meu perfil">
-                    </a>
+                    <a href="login.html" target="_blank" class="nav__link">Login</a>
                 </li>
             </ul>
         </nav>
@@ -54,17 +48,17 @@
 
             <div class="filme__container" id="slider"></div>
 
-            <a class="button__esquerda sliderButton" onclick="sliderScrollLeft()">
+            <button class="button__esquerda sliderButton" onclick="sliderScrollLeft()">
                 <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
                     <path d="M15.41 16.59 10.83 12 15.41 7.41 14 6l-6 6 6 6z" />
                 </svg>
-            </a>
+            </button>
 
-            <a class="button__direita sliderButton" onclick="sliderScrollRight()">
+            <button class="button__direita sliderButton" onclick="sliderScrollRight()">
                 <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
                     <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
                 </svg>
-            </a>
+            </button>
 
         </div>
 
@@ -72,27 +66,21 @@
 
                     <div class="serie__container" id="slider"></div>
 
-            <a class="button__esquerda sliderButtonSerie" onclick="sliderSeriesScrollLeft()">
+            <button class="button__esquerda sliderButtonSerie" onclick="sliderSeriesScrollLeft()">
                 <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
                     <path d="M15.41 16.59 10.83 12 15.41 7.41 14 6l-6 6 6 6z" />
                 </svg>
-            </a>
+            </button>
 
-            <a class="button__direita sliderButtonSerie" onclick="sliderSeriesScrollRight()">
+            <button class="button__direita sliderButtonSerie" onclick="sliderSeriesScrollRight()">
                 <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
                     <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
                 </svg>
-            </a>
+            </button>
 
         </div>
     </section>
 
-    <section id="Assinatura" class="assinatura">
-        <h2 class="sub__titulo assinatura">Assine agora</h2>
-        <p class="texto__assinatura">Assine nosso plano e tenha acesso aos melhores filmes e séries</p>
-        <div class="assinatura"></div>
-
-    </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js"></script>
     <script src="js/filme.js"></script>
