@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-bt">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -13,18 +13,15 @@
     <title>SeuFilme</title>
 </head>
 
-<body>
+<body class="container">
     <header class="header">
         <nav class="nav">
             <ul class="nav__list">
-                <li class="menu__toggle">
-                    <button class="menu__toggle__icon" aria-label="menu hamburguer">
-                        <img src="./img/menu.svg" alt="menu hambuerger" />
-                    </button>
                 <li class="nav__item">
                     <a href="index.html"></a>
                     <img src="./img/logo.png" alt="logo do SeuFilme">
                 </li>
+      
                 <li class="nav__item">
                     <a href="index.html" class="nav__link">Início</a>
                 </li>
@@ -46,7 +43,7 @@
 
         <div class="carrossel">
 
-            <div class="filme__container" id="slider"></div>
+            <div class="filme__container" id="filme-slider"></div>
 
             <button class="button__esquerda sliderButton" onclick="sliderScrollLeft()">
                 <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
@@ -61,10 +58,11 @@
             </button>
 
         </div>
+        
+        <h2 id="serie" class="sub__titulo serie">Séries</h2>
+        <div class="carrossel">
 
-        <h2  id="serie" class="sub__titulo serie">Séries</h2>
-
-                    <div class="serie__container" id="slider"></div>
+            <div class="serie__container" id="serie-slider"></div>
 
             <button class="button__esquerda sliderButtonSerie" onclick="sliderSeriesScrollLeft()">
                 <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
@@ -85,6 +83,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js"></script>
     <script src="js/filme.js"></script>
     <script src="js/serie.js"></script>
+ 
 </body>
 
 </html>

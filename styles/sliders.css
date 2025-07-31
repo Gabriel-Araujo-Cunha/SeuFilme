@@ -37,7 +37,7 @@
 
 .sliderButtonSerie {
   position: absolute;
-  top: 115%;
+  top: 50%;
   transform: translateY(-50%);
   width: 2.5rem;
   height: 3rem;
@@ -58,4 +58,16 @@
 .sliderButtonSerie:hover {
   opacity: 1;
   background: rgba(255, 255, 255, 0.3); 
+}
+
+@media (max-width: 1024px) {
+  .slider-img {
+    width: 180px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .slider-img {
+    width: 120px; 
+  }
 }

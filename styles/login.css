@@ -1,3 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px; 
+  margin: 0 auto;
+  padding: 0 1rem;
+  background-color: #000;
+}
+
 .login__container {
     display: flex;
     justify-content: center;
@@ -97,4 +111,16 @@
 
 .register__link:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .login__box {
+    padding: 1.5rem;
+    width: 90%; 
+    border: none; 
+  }
+
+  .login__form input, .login {
+    padding: 0.6rem; 
+  }
 }
